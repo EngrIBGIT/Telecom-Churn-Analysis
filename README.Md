@@ -29,7 +29,7 @@ Customer churn is a critical challenge for telecom companies, directly impacting
 
 ## Dataset
 
-The project utilizes the `telecom_churn.csv` dataset, which contains various customer attributes and services. The `Churn` column is the target variable, indicating whether a customer has churned ('Yes' or 'No').
+The project utilizes the [telecom_churn.csv](./telecom_churn.csv) — Raw dataset used for churn analysis dataset, which contains various customer attributes and services. The `Churn` column is the target variable, indicating whether a customer has churned ('Yes' or 'No').
 
 **Key Features:**
 - `customerID`: Unique customer identifier.
@@ -144,6 +144,8 @@ Based on the evaluation metrics, the **Gradient Boosting Classifier** was select
 ## Customer Prioritization Framework
 
 A framework for prioritizing high-risk customers for intervention was developed, segmenting customers into tiers based on their predicted churn probability (High-Risk vs. Low-Risk) and customer value (using `TotalCharges` as a proxy: Low-Value, Medium-Value, High-Value). This ensures retention efforts are focused on the most impactful customers.
+
+[The Notebook_churn_analysis_complete.ipynb](./The%20Notebook_churn_analysis_complete.ipynb) — Jupyter Notebook with the full analysis pipeline
 
 **Example Tiers:**
 - **High-Risk-High-Value (HRHV)**: Top priority; immediate, personalized, comprehensive interventions (e.g., dedicated account managers, exclusive offers).
